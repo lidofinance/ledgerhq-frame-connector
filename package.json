@@ -1,6 +1,6 @@
 {
   "name": "web3-ledgerhq-frame-connector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "typings": "dist/index.d.ts",
   "main": "dist/index.js",
