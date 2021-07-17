@@ -1,6 +1,6 @@
 {
   "name": "web3-ledgerhq-frame-connector",
-  "version": "0.0.3",
+  "version": "0.0.0-semantic-release",
   "license": "MIT",
   "typings": "dist/index.d.ts",
   "main": "dist/index.js",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4",
     "tsdx": "^0.14.1",
     "typescript": "^4.3.5"
   },
