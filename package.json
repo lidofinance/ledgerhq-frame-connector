@@ -1,0 +1,27 @@
+{
+  "name": "web3-ledgerhq-frame-connector",
+  "version": "0.0.1",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/web3-ledgerhq-frame-connector.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "lint": "tsdx lint src"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "tsdx": "^0.14.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@ledgerhq/iframe-provider": "0",
+    "@web3-react/abstract-connector": "6",
+    "@web3-react/types": "6",
+    "tiny-invariant": "1"
+  },
+  "sideEffects": false
+}
