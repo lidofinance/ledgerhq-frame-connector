@@ -7,7 +7,7 @@ import type { IFrameEthereumProvider } from '@ledgerhq/iframe-provider';
 
 type IFrameEthereumProviderOptions = ConstructorParameters<
   typeof IFrameEthereumProvider
->[0];
+>[0] & { supportedChainIds?: number[] };
 
 const MAINNET_CHAIN_ID = 1;
 
@@ -16,8 +16,11 @@ export class LedgerHQFrameConnector extends AbstractConnector {
   public provider?: IFrameEthereumProvider;
 
   constructor(config?: IFrameEthereumProviderOptions) {
-    super({ supportedChainIds: [MAINNET_CHAIN_ID] });
-    this.config = config;
+    super({
+      supportedChainIds: config?.supportedChainIds ?? [MAINNET_CHAIN_ID],
+    });
+
+    this.config = config ?? {};
 
     this.handleNetworkChanged = this.handleNetworkChanged.bind(this);
     this.handleChainChanged = this.handleChainChanged.bind(this);
