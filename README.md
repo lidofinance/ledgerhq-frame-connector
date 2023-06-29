@@ -10,12 +10,14 @@ yarn add web3-ledgerhq-frame-connector
 
 ## Arguments
 
-Connector has the same arguments as [IFrameEthereumProvider](https://github.com/LedgerHQ/iframe-provider#usage)
+Connector has the same arguments as [IFrameEthereumProvider](https://github.com/LedgerHQ/iframe-provider#usage) as well an optional
+`supportedChainIds` to support testnets, defaults to Ethereum Mainnet only.
 
 ```ts
 new LedgerHQFrameConnector({
   targetOrigin?: string;
   timeoutMilliseconds?: number;
+  supportedChainIds?: number[]
 });
 ```
 
