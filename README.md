@@ -1,3 +1,7 @@
+# ⚠️ DEPRECATION WARNING ⚠️
+### The ledger connector for web3-react is not maintained anymore.
+### The ledger connector for wagmi can be found in the [reef-knot package](https://github.com/lidofinance/reef-knot/tree/main/packages/connectors/ledger-connector) and continues to be supported and developed there.
+
 # Ledger iframe connector
 
 Connector for [web3-react](https://github.com/NoahZinsmeister/web3-react) based on `@ledgerhq/iframe-provider`
